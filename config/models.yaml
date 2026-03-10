@@ -1,0 +1,4 @@
+models:
+  - sentence-transformers/all-MiniLM-L6-v2
+  - BAAI/bge-base-en-v1.5
+  - hkunlp/instructor-large
