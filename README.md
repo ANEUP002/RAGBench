@@ -23,3 +23,60 @@ Built for researchers and engineers exploring high-performance RAG architectures
 ### Model Comparison
 
 ![Model vs F1](results/plots/model_vs_f1.png)
+
+
+---
+
+# Supported Embedding Models
+
+Current models tested:
+
+- sentence-transformers/all-MiniLM-L6-v2
+- BAAI/bge-base-en-v1.5
+- hkunlp/instructor-large
+
+These models generate vector embeddings used for similarity search.
+
+---
+
+# Vector Index Types
+
+FAISS indexes supported:
+
+| Index | Description |
+|------|-------------|
+| Flat | Exact nearest neighbor search |
+| HNSW | Graph-based approximate nearest neighbors |
+| IVF | Inverted file index for large datasets |
+
+---
+
+# Evaluation Metrics
+
+RAGBench evaluates retrieval performance using:
+
+- Precision@K
+- Recall@K
+- Hit Rate@K
+- Mean Reciprocal Rank (MRR)
+- F1 Score
+
+---
+
+# Dataset
+
+Experiments are performed on the **SciFact dataset** from the BEIR benchmark.
+
+## Quick Start
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/RAGBench.git
+cd RAGBench
+
+Create Environment
+python -m venv venv
+
+
+
