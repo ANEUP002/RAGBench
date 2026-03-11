@@ -1,19 +1,22 @@
-from ragbench.datasets.dataset_loader import DataLoader
-from ragbench.utils.chunking import chunk_documents
+from ragbench.experiments.experiment_runner import ExperimentRunner
+
+
 def main():
-    loader = DataLoader(
-        "data/corpus.json",
-        "data/queries.json",
-        "data/ground_truth.json"
+
+    runner = ExperimentRunner(
+        dataset_path="datasets/scifact",   # dataset folder
+        models_path="config/models.yaml",
+        index_types=["flat", "hnsw", "ivf"],
+        chunk_sizes=[128, 256, 512],
+        top_k_values=[3],
     )
 
-    corpus, queries, ground_truth = loader.load_dataset()
+    results = runner.run()
 
-    chunks = chunk_documents(corpus)
-    print("Chunks:")
-    for c in chunks:
-        print(c)
+    print("\nAll Experiment Results:")
+    for r in results:
+        print(r)
 
-    
+
 if __name__ == "__main__":
     main()

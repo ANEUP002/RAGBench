@@ -1,4 +1,4 @@
-def chunk_documents(corpus, chunk_size=40, overlap=10):
+def chunk_documents(corpus, chunk_size=256, overlap=20):
     chunks = []
 
     for doc_id, text in corpus.items():
