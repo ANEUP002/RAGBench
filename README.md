@@ -7,6 +7,15 @@ It supports systematic experimentation across embedding models, vector search in
 
 Built for researchers and engineers exploring high-performance RAG architectures.
 
+## Highlights
+
+• Benchmark dense retrieval pipelines for RAG systems  
+• Supports multiple embedding models and FAISS index types  
+• Automatic experiment runner for parameter sweeps  
+• Embedding caching for faster experiments  
+• Automatic visualization of benchmark results  
+• Supports BEIR datasets for reproducible evaluation
+
 ![Python](https://img.shields.io/badge/python-3.10+-blue)
 ![FAISS](https://img.shields.io/badge/vector_search-FAISS-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -24,14 +33,6 @@ Built for researchers and engineers exploring high-performance RAG architectures
 
 ![Model vs F1](results/plots/model_vs_f1.png)
 
-## Highlights
-
-• Benchmark dense retrieval pipelines for RAG systems  
-• Supports multiple embedding models and FAISS index types  
-• Automatic experiment runner for parameter sweeps  
-• Embedding caching for faster experiments  
-• Automatic visualization of benchmark results  
-• Supports BEIR datasets for reproducible evaluation
 
 
 
