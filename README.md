@@ -91,18 +91,9 @@ Run benchmark:
 
 python main.py
 
+```
 
-This removes friction for anyone testing your code.
 
----
-
-# 4️⃣ Add an Architecture Diagram (very impressive)
-
-Even a simple diagram helps.
-
-Add:
-
-```markdown
 ## System Architecture
 
 Dataset
@@ -119,5 +110,22 @@ Evaluation Metrics
 ↓
 Benchmark Results + Visualization
 
+## Key Findings
+
+Experiments on the SciFact dataset reveal:
+
+• BAAI/bge-base-en-v1.5 achieves the highest F1 score  
+• Smaller chunk sizes (~128 tokens) outperform larger chunks  
+• Flat and HNSW indexes outperform IVF for smaller datasets  
+
+These results highlight the importance of embedding model selection and chunking strategy when designing RAG pipelines.
+
+## Future Work
+
+• Cross-encoder reranking  
+• Hybrid retrieval (BM25 + dense retrieval)  
+• Support for additional BEIR datasets  
+• Integration with LLM generation pipelines  
+• Large-scale vector databases (Milvus, Qdrant)
 
 
