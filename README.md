@@ -76,7 +76,48 @@ git clone https://github.com/yourusername/RAGBench.git
 cd RAGBench
 
 Create Environment
-python -m venv venv
+
+-python -m venv venv
+
+Activate
+
+-venv\Scripts\activate
+
+Install dependencies:
+
+-pip install -r requirements.txt
+
+Run benchmark:
+
+python main.py
+
+
+This removes friction for anyone testing your code.
+
+---
+
+# 4️⃣ Add an Architecture Diagram (very impressive)
+
+Even a simple diagram helps.
+
+Add:
+
+```markdown
+## System Architecture
+
+Dataset
+↓
+Document Chunking
+↓
+Embedding Model
+↓
+Vector Index (FAISS)
+↓
+Top-K Retrieval
+↓
+Evaluation Metrics
+↓
+Benchmark Results + Visualization
 
 
 
