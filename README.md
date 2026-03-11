@@ -1,47 +1,12 @@
 # RAGBench
-# RAGBench
+Benchmarking Retrieval Pipelines for Retrieval-Augmented Generation
 
-RAGBench is a lightweight benchmarking framework for evaluating Retrieval-Augmented Generation (RAG) systems.
+RAGBench is a modular benchmarking framework for evaluating dense retrieval pipelines used in Retrieval-Augmented Generation (RAG) systems.
 
-The goal of this project is to measure retrieval performance using standard information retrieval metrics such as:
+It supports systematic experimentation across embedding models, vector search indexes, and chunking strategies while measuring retrieval quality using standard Information Retrieval metrics.
 
-* Precision
-* Recall
-* F1 Score
+Built for researchers and engineers exploring high-performance RAG architectures.
 
-RAGBench simulates a retrieval pipeline and evaluates how well a system retrieves relevant documents for a given query.
-
-## Features
-
-* Evaluate retrieval quality
-* Compute precision, recall, and F1
-* Modular retrieval pipeline
-* Easy integration with vector databases (FAISS, Chroma, etc.)
-
-## Project Structure
-
-```
-RAGBench/
-│
-├── dataset.py        # Example evaluation dataset
-├── retrieval.py      # Retrieval simulation / retrieval system
-├── metrics.py        # Precision, recall, F1 implementation
-├── evaluate.py       # Runs evaluation pipeline
-└── README.md
-```
-
-## Future Improvements
-
-* Embedding-based retrieval
-* FAISS vector search
-* Top-K evaluation
-* Hit@K, MRR, nDCG metrics
-* Visualization of benchmark results
-
-## Goal
-
-The goal of RAGBench is to provide a simple framework for experimenting with and evaluating RAG systems.
-
-## Author
-
-Ayush Neupane
+![Python](https://img.shields.io/badge/python-3.10+-blue)
+![FAISS](https://img.shields.io/badge/vector_search-FAISS-orange)
+![License](https://img.shields.io/badge/license-MIT-green)
